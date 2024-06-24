@@ -14,13 +14,14 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  background-color: black;
+  background-color: #1d1d1d;
 }
 
 .logo img {
   width: 32px;
   height: 32px;
   padding-left:25px;
+  padding-top: 4px;
 }
 
 .nav-links {
@@ -515,6 +516,34 @@
   }
   .hero {
     height: 500px;
+  }
+  .join-discord {
+    padding: 20px;
+    margin-top: 75px;
+  }
+
+  .how-it-works {
+    padding: 20px;
+  }
+
+  .join-solar {
+    padding: 20px;
+  }
+
+  .faq {
+    padding: 20px;
+  }
+
+  .testimonials {
+    padding: 20px;
+  }
+
+  .steps {
+    padding: 20px;
+  }
+
+  .faq-question {
+    font-size: 14px;
   }
 }
 
