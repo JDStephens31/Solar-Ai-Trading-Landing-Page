@@ -1,178 +1,366 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Hero Section */
 .hero {
-    background-image: url("../img/space.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 650px;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
+  background-image: url("../img/space.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .mars {
-    background-image: url("../img/mars_glow__dark.png");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 325px;
-    width: 100%;
-    max-width: 1366px;
-    position: absolute;
-    bottom: 0;
-    z-index: 2;
+  background-image: url("../img/mars_glow__dark.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 325px;
+  width: 100%;
+  max-width: 1366px;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
 }
 
 .gradient {
-    height: 161.25px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    z-index: 3;
-    background: rgb(5, 5, 5);
-    background: -moz-linear-gradient(0deg, rgba(5, 5, 5, 1) 0%, rgba(5, 5, 5, 0) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(5, 5, 5, 1) 0%, rgba(5, 5, 5, 0) 100%);
-    background: linear-gradient(0deg, rgba(5, 5, 5, 1) 0%, rgba(5, 5, 5, 0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#050505", endColorstr="#050505", GradientType=1);
+  height: 161.25px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+  background: rgb(5, 5, 5);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(5, 5, 5, 1) 0%,
+    rgba(5, 5, 5, 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(5, 5, 5, 1) 0%,
+    rgba(5, 5, 5, 0) 100%
+  );
+  background: linear-gradient(0deg, rgba(5, 5, 5, 1) 0%, rgba(5, 5, 5, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#050505", endColorstr="#050505", GradientType=1);
 }
 
 /* Hero Title */
 .hero-title {
-    font-size: 128px;
-    text-align: center;
-    padding-top: 100px;
-    position: relative;
-    z-index: 1;
-    color: #fff;
-    mix-blend-mode: difference;
-    transition: ease 750ms;
-    /* animation: fadeUp 1.25s ease;
+  font-size: 128px;
+  text-align: center;
+  padding-top: 100px;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  mix-blend-mode: difference;
+  transition: ease 750ms;
+  /* animation: fadeUp 1.25s ease;
     animation-delay: 1s; */
 }
 
-
 .fade-in-up {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fadeInUp {
+  0% {
     opacity: 0;
     transform: translateY(50px);
-    animation: fadeInUp 1s forwards;
-    animation-delay: 1s;
   }
-
-  @keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
 
 @keyframes fadeUp {
-    from {
-        opacity: 0;
-        padding-top: 400px;
-    }
-    to {
-        opacity: 1;
-        padding-top: 100px;
-    }
+  from {
+    opacity: 0;
+    padding-top: 400px;
+  }
+  to {
+    opacity: 1;
+    padding-top: 100px;
+  }
 }
 
 /* Floating Cards */
 .mars img:nth-child(1) {
-    margin: 0 0 0 150px;
-    float: left;
+  margin: 0 0 0 150px;
+  float: left;
 }
 
 .mars img:nth-child(2) {
-    margin: 100px 100px 0 0;
-    float: right;
-    animation-delay: .5s;
+  margin: 100px 100px 0 0;
+  float: right;
+  animation-delay: 0.5s;
 }
 
 /* Hero Button Group */
 .button-group {
-    display: flex;
-    margin: 0 auto;
-    width: max-content;
-    align-items: center;
-    justify-content: space-between;
-    height: max-content;
-    width: 225px;
-    z-index: 5;
-    position: relative;
+  display: flex;
+  margin: 0 auto;
+  width: max-content;
+  align-items: center;
+  justify-content: space-between;
+  height: max-content;
+  width: 225px;
+  z-index: 5;
+  position: relative;
 }
 
 .button-group button:nth-child(1) {
-    background-color: #F2900F;
-    border-radius: 10px;
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    animation-delay: 1.25s;
+  background-color: #f2900f;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  animation-delay: 1.25s;
 }
 
 .button-group button:nth-child(2) {
-    background-color: #1D1D1D;
+  background-color: #1d1d1d;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  animation-delay: 1.5s;
+}
+
+/* Join Discord Section */
+.join-discord {
+  background: rgb(12, 12, 12);
+  background: -moz-linear-gradient(
+    39deg,
+    rgba(12, 12, 12, 1) 0%,
+    rgba(28, 28, 28, 0.5186449579831933) 72%,
+    rgba(114, 114, 114, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    39deg,
+    rgba(12, 12, 12, 1) 0%,
+    rgba(28, 28, 28, 0.5186449579831933) 72%,
+    rgba(114, 114, 114, 1) 100%
+  );
+  background: linear-gradient(
+    39deg,
+    rgba(12, 12, 12, 1) 0%,
+    rgba(28, 28, 28, 0.5186449579831933) 72%,
+    rgba(114, 114, 114, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0c0c0c",endColorstr="#727272",GradientType=1);
+
+  -webkit-box-shadow: 0px 0px 14.3px 0px rgba(255, 255, 255, 0.06);
+  -moz-box-shadow: 0px 0px 14.3px 0px rgba(255, 255, 255, 0.06);
+  box-shadow: 0px 0px 14.3px 0px rgba(255, 255, 255, 0.06);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-top: 150px;
+  border: 1px solid rgba(255, 255, 255, 0.19);
+  padding: 50px;
+  text-align: center;
+}
+
+.join-discord p {
+  margin: 10px 0 10px 0;
+}
+
+.join-discord button {
+  background-color: #f2900f;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+}
+
+/* How it works */
+.how-it-works {
+  background: rgb(12, 12, 12);
+  background: -moz-linear-gradient(
+    292deg,
+    rgba(12, 12, 12, 1) 0%,
+    rgba(28, 28, 28, 0.5186449579831933) 72%,
+    rgba(114, 114, 114, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    292deg,
+    rgba(12, 12, 12, 1) 0%,
+    rgba(28, 28, 28, 0.5186449579831933) 72%,
+    rgba(114, 114, 114, 1) 100%
+  );
+  background: linear-gradient(
+    292deg,
+    rgba(12, 12, 12, 1) 0%,
+    rgba(28, 28, 28, 0.5186449579831933) 72%,
+    rgba(114, 114, 114, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0c0c0c",endColorstr="#727272",GradientType=1);
+  -webkit-box-shadow: 0px 0px 14.3px 0px rgba(255, 255, 255, 0.06);
+  -moz-box-shadow: 0px 0px 14.3px 0px rgba(255, 255, 255, 0.06);
+  box-shadow: 0px 0px 14.3px 0px rgba(255, 255, 255, 0.06);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-top: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.19);
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.how-it-works .text-content {
+  width: 45%;
+  min-width: 300px;
+}
+
+.how-it-works .text-content h3{
+    font-size: 16px;
+}
+
+.how-it-works .text-content h2{
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.how-it-works .text-content p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.how-it-works .text-content button{
+    background-color: #f2900f;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+}
+
+.how-it-works .image {
+    background-image: url("../img/chart.PNG");
+    background-position: center;
+    background-size: cover;
     border-radius: 10px;
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    animation-delay: 1.5s;
+    height: auto;
+    min-height: 300px;
+    width: 45%;
+    min-width: 300px;
+}
+
+/* Steps */
+.steps {
+    width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-top: 50px;
+  padding: 50px;
+}
+
+.steps .divider {
+    margin: 10px 0;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.step {
+    background-image: url("../img/steps.png");
+    height: 194.97px;
+    width: 225px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 35px;
+}
+
+.step h3 {
+    font-size: 32px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.step p {
+    font-size: 20px;
 }
 
 @media only screen and (max-width: 1200px) {
-    .mars img:nth-child(1) {
-        margin: 0 0 0 100px;
-        float: left;
-    }
+  .mars img:nth-child(1) {
+    margin: 0 0 0 100px;
+    float: left;
   }
+}
 
-  @media only screen and (max-width: 1100px) {
-    .mars img:nth-child(1) {
-        display: none;
-    }
-    .mars img:nth-child(2) {
-        display: none;
+@media only screen and (max-width: 1100px) {
+  .mars img:nth-child(1) {
+    display: none;
+  }
+  .mars img:nth-child(2) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1125px) {
+    .steps-container {
+        justify-content: space-evenly;
     }
   }
 
 @media only screen and (max-width: 1000px) {
-    .mars {
-        height: 30%;
+  .mars {
+    height: 30%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+    .how-it-works .image {
+        display: none;
+    }
+
+    .how-it-works .text-content {
+        width: 100%;
+    }
+
+    .steps-container {
+        flex-direction: column;
     }
   }
 
-  @media only screen and (max-width: 500px) {
-    .hero-title {
-        font-size: 100px;
-    }
-    .hero {
-        height: 500px;
-    }
+@media only screen and (max-width: 500px) {
+  .hero-title {
+    font-size: 100px;
+  }
+  .hero {
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .hero-title {
+    font-size: 80px;
+    margin-bottom: 25px;
+  }
+  .hero-title {
+    font-size: 60px;
+    margin-bottom: 25px;
   }
 
-  @media only screen and (max-width: 400px) {
-    .hero-title {
-        font-size: 80px;
-        margin-bottom: 25px;
-    }
+  .hero {
+    height: 400px;
   }
-
-  @media only screen and (max-width: 400px) {
-    .hero-title {
-        font-size: 60px;
-        margin-bottom: 25px;
+  .how-it-works .text-content{
+    min-width: none;
     }
-
-    .hero {
-        height: 400px;
-    }
-  }
+}
