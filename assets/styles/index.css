@@ -127,3 +127,52 @@
     outline: none;
     animation-delay: 1.5s;
 }
+
+@media only screen and (max-width: 1200px) {
+    .mars img:nth-child(1) {
+        margin: 0 0 0 100px;
+        float: left;
+    }
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .mars img:nth-child(1) {
+        display: none;
+    }
+    .mars img:nth-child(2) {
+        display: none;
+    }
+  }
+
+@media only screen and (max-width: 1000px) {
+    .mars {
+        height: 30%;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .hero-title {
+        font-size: 100px;
+    }
+    .hero {
+        height: 500px;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .hero-title {
+        font-size: 80px;
+        margin-bottom: 25px;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .hero-title {
+        font-size: 60px;
+        margin-bottom: 25px;
+    }
+
+    .hero {
+        height: 400px;
+    }
+  }
