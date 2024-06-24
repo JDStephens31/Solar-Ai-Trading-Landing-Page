@@ -164,7 +164,7 @@
   width: 80%;
   margin: 0 auto;
   border-radius: 10px;
-  margin-top: 150px;
+  margin-top: 75px;
   border: 1px solid rgba(255, 255, 255, 0.19);
   padding: 50px;
   text-align: center;
@@ -284,6 +284,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     padding: 35px;
+    margin-top: 25px;
 }
 
 .step h3 {
@@ -294,6 +295,140 @@
 
 .step p {
     font-size: 20px;
+}
+
+/* Testimonials */
+.testimonials {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.testimonials .divider {
+  margin: 10px 0;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  margin-top: 25px;
+  width: 250px;
+  min-width: 250px;
+}
+
+.stars {
+  margin: 10px 0;
+}
+
+/* Faq */
+.faq {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.faq .divider {
+  margin: 10px 0;
+}
+
+.faq-container {
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.faq-item {
+  border-bottom: 1px solid #fff;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.faq-answer {
+  display: none;
+  padding: 15px 20px;
+}
+
+.arrow {
+  transition: transform 0.3s;
+}
+
+.arrow.open {
+  transform: rotate(90deg);
+}
+
+/* Join Solar */
+.join-solar {
+  background: rgb(12, 12, 12);
+  background: -moz-linear-gradient(
+    39deg,
+    rgba(12, 12, 12, 1) 0%,
+    rgba(28, 28, 28, 0.5186449579831933) 72%,
+    rgba(114, 114, 114, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    39deg,
+    rgba(12, 12, 12, 1) 0%,
+    rgba(28, 28, 28, 0.5186449579831933) 72%,
+    rgba(114, 114, 114, 1) 100%
+  );
+  background: linear-gradient(
+    39deg,
+    rgba(12, 12, 12, 1) 0%,
+    rgba(28, 28, 28, 0.5186449579831933) 72%,
+    rgba(114, 114, 114, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0c0c0c",endColorstr="#727272",GradientType=1);
+
+  -webkit-box-shadow: 0px 0px 14.3px 0px rgba(255, 255, 255, 0.06);
+  -moz-box-shadow: 0px 0px 14.3px 0px rgba(255, 255, 255, 0.06);
+  box-shadow: 0px 0px 14.3px 0px rgba(255, 255, 255, 0.06);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-top: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.19);
+  padding: 50px;
+  text-align: center;
+}
+
+.join-solar p {
+  margin: 10px 0 10px 0;
+}
+
+.join-solar button {
+  background-color: #f2900f;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+}
+
+/* Footer */
+.footer {
+  background-color: #101010;
+  padding: 25px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 12px;
+}
+
+.footer h6 {
+  margin-top: 25px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -348,10 +483,7 @@
 }
 
 @media only screen and (max-width: 400px) {
-  .hero-title {
-    font-size: 80px;
-    margin-bottom: 25px;
-  }
+
   .hero-title {
     font-size: 60px;
     margin-bottom: 25px;
@@ -363,4 +495,33 @@
   .how-it-works .text-content{
     min-width: none;
     }
+    .join-discord {
+      padding: 20px;
+      margin-top: 75px;
+    }
+
+    .how-it-works {
+      padding: 20px;
+    }
+
+    .join-solar {
+      padding: 20px;
+    }
+
+    .faq {
+      padding: 20px;
+    }
+
+    .testimonials {
+      padding: 20px;
+    }
+
+    .steps {
+      padding: 20px;
+    }
+
+    .faq-question {
+      font-size: 14px;
+    }
+
 }

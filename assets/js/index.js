@@ -7,3 +7,19 @@ document.addEventListener('scroll', function() {
         document.querySelector('.hero-title').style.transform = `translateY(${parallaxValue}px)`;
     }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const items = document.querySelectorAll(".faq-item");
+
+    items.forEach(item => {
+        const question = item.querySelector(".faq-question");
+        const answer = item.querySelector(".faq-answer");
+        const arrow = item.querySelector(".arrow");
+
+        question.addEventListener("click", () => {
+            const isOpen = answer.style.display === "block";
+            answer.style.display = isOpen ? "none" : "block";
+            arrow.classList.toggle("open", !isOpen);
+        });
+    });
+});
