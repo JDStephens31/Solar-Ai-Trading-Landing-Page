@@ -172,6 +172,10 @@
   animation-delay: 1.5s;
 }
 
+.button-group button:nth-child(2) a {
+  text-decoration: none;
+}
+
 /* Join Discord Section */
 .join-discord {
   background: rgb(12, 12, 12);
@@ -544,6 +548,16 @@
 
   .faq-question {
     font-size: 14px;
+  }
+  .button-group {
+    flex-direction: column;
+    width: 80%;
+    margin-top: 15px;
+  }
+
+  .button-group button {
+    width: 100%;
+    margin-top: 10px;
   }
 }
 

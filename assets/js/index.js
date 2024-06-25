@@ -23,3 +23,12 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+function whop() {
+    window.location.href = "https://whop.com/solar-ai-trading/"
+}
+
+function discord() {
+    window.location.href = "https://discord.gg/HYN2j72a"
+}
+
