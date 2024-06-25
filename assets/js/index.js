@@ -29,6 +29,6 @@ function whop() {
 }
 
 function discord() {
-    window.location.href = "https://discord.gg/HYN2j72a"
+    window.location.href = "https://discord.gg/cMAgfQQUzg"
 }
 
